@@ -4,44 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushhub</title>
+    <title>Testing KeyFrames</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        #black{
-            background-color: black;
-            color: white;
-        }
-        div{
-            font-size: 4em;
-            margin-top: 10%;
-            text-align: center;
-        }
 
-        #yellow{
-            background-color: rgb(217, 144, 76);
-            border-radius: 10%;
-            padding: 2px;
+        *{
+            margin: 0% auto;
+            padding: 0%;
         }
-
+        img{
+            animation: waves 5s alternate infinite;
+        }
+        @keyframes waves {
+            0% {transform: translateX(0%);}
+            100% {transform: translateX(50%);}
+        }
     </style>
 </head>
-<body style="background-color: black;">
-    <div id='container'>
-        <span id="black">Kush</span><span id="yellow">urox</span>
-    </div>
-
-    <audio id="myaudio">
-        <source src=theme.mp3 type="audio/mpeg">
-    </audio>
-
-    <script>
-        var played = false;
-        var x = document.getElementById("myaudio");
-        document.getElementById('container').addEventListener('mouseup', function(){
-            if(played == false){
-                x.play();
-                played = true;
-            }
-        });
-    </script>
+<body>
+    <header>
+    <img src=wave.svg style="margin-left: -100%; position: fixed;">
+    <h1 style="position: absolute; margin: 10%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white;">Welcome to my website</h1>
+    </header>
 </body>
 </html>
