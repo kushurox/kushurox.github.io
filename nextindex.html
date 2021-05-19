@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index 2</title>
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+
+.button {
+  background:orange;
+  box-shadow:10px 10px 0 rgba(0,0,0,.5);
+  display:inline-block;
+  font-size:2em;
+  padding:.5em 2em;
+  text-decoration:none;
+  margin: 20%;
+}
+
+@keyframes rest {
+    /* from {box-shadow: 0 0 0 ;} */
+    to { box-shadow: 0 0 0 ;}
+}
+.button:hover {
+    animation: rest 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.parallelogram{
+  transform: skew(-20deg);
+}
+
+.skew-fix{
+  display:inline-block;
+  transform: skew(20deg);
+}
+    </style>
 </head>
-<body>
+<body style="background-color: lightgray;">
+    <a class="button parallelogram" href="#">
+        <span class="skew-fix">Im one heck of a sexy button</span>
+    </a>
     
 </body>
 </html>
