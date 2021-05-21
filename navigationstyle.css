@@ -44,7 +44,7 @@
 }
 
 .in_nav{
-    animation: inwards 1s;
+    animation: inwards 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .out_nav{
-    animation: outwards 1s;
+    animation: outwards 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -76,7 +76,7 @@
     border-bottom: 1px solid white;
     border-radius: 5px;
     opacity: 0.5;
-    padding: 5vh;
+    padding: 3vh;
     font-size: larger;
 }
 
