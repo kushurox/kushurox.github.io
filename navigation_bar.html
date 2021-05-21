@@ -16,17 +16,31 @@
     </header>
     <div class="nav_drawer in_nav">
         <ul class="navlist">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Cool Button</li>
-            <li class="nav-item">Current Page</li>
+            <li class="nav-item" id="homepage">Home</li>
+            <li class="nav-item" id="aboutpage">About</li>
+            <li class="nav-item" id="servicepage">Services</li>
         </ul>
+    
     </div>
+    <div id="mainbody" class="mainbody-in"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            $("#mainbody").load("home.html#content")
             $(".navbutton").click(function(){
                 $(".nav_drawer").toggleClass('out_nav');
                 $(".nav_drawer").toggleClass('in_nav');
+            })
+
+            $("#homepage").click(function(){
+                $("#mainbody").load("home.html#content")
+            })
+
+            $("#aboutpage").click(function(){
+                $("#mainbody").load("about.html#content")
+            })
+            $("#servicepage").click(function(){
+                $("#mainbody").load("service.html#content")
             })
         })
     </script>

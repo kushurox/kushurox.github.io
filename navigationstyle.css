@@ -41,6 +41,7 @@
     background-color: rgb(1, 20, 64);
     overflow-y: scroll hidden;
     margin-left: -56vh;
+    position: absolute;
 }
 
 .in_nav{
@@ -86,4 +87,8 @@
 
 body{
     background-color: rgb(115, 5, 62);
+}
+
+.mainbody-in{
+    width: 100vh;
 }
