@@ -1,0 +1,59 @@
+#userbox{
+    width: 30vw;
+    height: 20vh;
+    background-color: rgb(90, 2, 48);
+    margin-top: 15vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    background: none;
+    border-bottom: 2px yellowgreen solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 80%;
+    height: 25%;
+    color: white;
+    font-size: x-large;
+    margin-top: 5%;
+}
+input[type=text]:focus{
+    width: 100%;
+    transition: 0.5s;
+    outline: none;
+}
+
+#submitform{
+    background: none;
+    border: 0px;
+    margin-top: 7%;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+}
+
+#submitform:hover{
+    color: yellowgreen;
+}
+
+#title{
+    color: yellowgreen;
+}
+
+h1{
+    text-align: center;
+}
+
+#currentus{
+    margin-top: 10vh;
+    width: 100%;
+    text-align: center;
+
+}
