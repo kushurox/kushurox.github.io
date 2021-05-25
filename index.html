@@ -4,57 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Random website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kushurox.github.io/" />
-    <meta property="og:description" content="Kush's random testing on this marvelous website" />
-    <meta name="theme-color" content="#FF0000">
-    <title>Testing KeyFrames</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-
-        *{
-            margin: 0% auto;
-            padding: 0%;
-        }
-        img{
-            animation: waves 5s alternate infinite;
-        }
-        @keyframes waves {
-            0% {transform: translateX(0%);}
-            100% {transform: translateX(50%);}
-        }
-
-        h1{
-            position: absolute;
-            margin: 10%;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-        }
-        #new{
-            margin-top: 9.5%;
-            margin-left: 40%;
-            background: rgba(26, 156, 252, 0);
-            padding: 1em;
-            border-radius: 10%;
-            border: 0px;
-            font-size: larger;
-            position: relative;
-        }
-        #new:hover{
-            color: white;
-            background: black;
-
-        }
-    </style>
+    <title>Navigation</title>
+    <link rel="stylesheet" href="styles/navigationstyle.css">
 </head>
-<body style="background-color: black;">
+<body>
     <header>
-    <img src=wave.svg style="margin-left: -100%; position: fixed;">
-    <h1>Welcome to my website</h1>
+        <nav class="navbar">
+            <button class="navbutton" id='cool'>Open Menu</button>
+        </nav>
+        
     </header>
-    <section>
-        <a href="nextindex.html"><button id=new>Next Page</button></a>
-    </section>
+    <div class="nav_drawer in_nav">
+        <ul class="navlist">
+            <li class="nav-item" id="homepage">Home</li>
+            <li class="nav-item" id="aboutpage">About</li>
+            <li class="nav-item" id="servicepage">Services</li>
+        </ul>
+    </div>
+    <div id="mainbody" class="mainbody-in"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
